@@ -1,0 +1,53 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.50'
+}
+
+group 'sandbox'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 13
+targetCompatibility = 13
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+
+    testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+
+    // Apache Camel
+//    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    compile group: 'javax.activation', name: 'activation', version: '1.1.1'
+    compile group: 'org.apache.camel', name: 'camel-core', version: '2.24.2'
+    compile group: 'org.apache.camel', name: 'camel-mail', version: '2.24.2'
+    testCompile group: 'org.apache.camel', name: 'camel-test', version: '2.24.2'
+    testCompile group: 'org.apache.camel', name: 'camel-test-blueprint', version: '2.24.2'
+
+    // RxJava
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.9'
+
+    // Reactor
+    compile group: 'io.projectreactor', name: 'reactor-core', version: '3.3.0.RELEASE'
+    testCompile group: 'io.projectreactor', name: 'reactor-test', version: '3.1.0.RELEASE'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "12"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "12"
+}
+
+test {
+    useJUnitPlatform()
+}
