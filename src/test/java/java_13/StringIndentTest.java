@@ -12,26 +12,26 @@ class StringIndentTest {
     @Test
     void test0() {
         String text = """
-            {
-                greeting: "hello",
-                audience: "text blocks",
-            }
-            """;
+                {
+                    greeting: "hello",
+                    audience: "text blocks",
+                }
+                """;
         print(text);
     }
 
     @Test
     void test1() {
         var text0 = """
-        worker bees can leave
-         even drones can fly away
-          the queen is their slave""";
-        print(text0);
-        var text1 = """
                 worker bees can leave
                  even drones can fly away
-                  the queen is their slave
-        """;
+                  the queen is their slave""";
+        print(text0);
+        var text1 = """
+                        worker bees can leave
+                         even drones can fly away
+                          the queen is their slave
+                """;
         print(text1);
         var text2 = """
                 worker bees can leave

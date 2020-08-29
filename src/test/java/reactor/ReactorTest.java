@@ -11,18 +11,18 @@ import static java.time.Duration.ofSeconds;
 
 class ReactorTest {
 
-	@Test
-	void test() {
-		StepVerifier
-				  .withVirtualTime(() ->
-							 Flux
-										.never()
-										.timeout(ofMillis(100))
-				  )
-				  .expectSubscription()
-				  .expectNoEvent(ofMillis(99))
-				  .thenAwait(ofMillis(1))
-				  .expectError(TimeoutException.class)
-				  .verify(ofSeconds(1));
-	}
+    @Test
+    void test() {
+        StepVerifier
+                .withVirtualTime(() ->
+                        Flux
+                                .never()
+                                .timeout(ofMillis(100))
+                )
+                .expectSubscription()
+                .expectNoEvent(ofMillis(99))
+                .thenAwait(ofMillis(1))
+                .expectError(TimeoutException.class)
+                .verify(ofSeconds(1));
+    }
 }
