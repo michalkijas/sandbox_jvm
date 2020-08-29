@@ -8,8 +8,8 @@ plugins {
 group 'sandbox'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 13
-targetCompatibility = 13
+sourceCompatibility = 14
+targetCompatibility = 14
 
 repositories {
     mavenCentral()
@@ -42,10 +42,10 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "12"
+    kotlinOptions.jvmTarget = "14"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "12"
+    kotlinOptions.jvmTarget = "14"
 }
 
 test {
