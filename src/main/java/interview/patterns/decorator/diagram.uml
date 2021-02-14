@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="158.0">interview.patterns.decorator.CandleDecorator</node>
+    <node x="176.50000000000006" y="79.0">interview.patterns.decorator.AddonDecorator</node>
+    <node x="173.00000000000006" y="158.0">interview.patterns.decorator.RibbonDecorator</node>
+    <node x="346.00000000000006" y="158.0">interview.patterns.decorator.BalloonDecorator</node>
+    <node x="342.50000000000006" y="79.0">interview.patterns.decorator.AnniversaryPostcard</node>
+    <node x="381.00000000000006" y="0.0">interview.patterns.decorator.Postcard</node>
+    <node x="543.5" y="79.0">interview.patterns.decorator.BirthdayPostcard</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interview.patterns.decorator.BalloonDecorator" target="interview.patterns.decorator.AddonDecorator">
+      <point x="0.0" y="-14.5" />
+      <point x="426.00000000000006" y="133.0" />
+      <point x="298.16666666666674" y="133.0" />
+      <point x="48.666666666666686" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.decorator.AnniversaryPostcard" target="interview.patterns.decorator.Postcard">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.decorator.AddonDecorator" target="interview.patterns.decorator.Postcard">
+      <point x="0.0" y="-14.5" />
+      <point x="249.50000000000006" y="54.0" />
+      <point x="398.33333333333337" y="54.0" />
+      <point x="-34.666666666666686" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.decorator.BirthdayPostcard" target="interview.patterns.decorator.Postcard">
+      <point x="0.0" y="-14.5" />
+      <point x="623.5" y="54.0" />
+      <point x="467.66666666666674" y="54.0" />
+      <point x="34.666666666666686" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.decorator.CandleDecorator" target="interview.patterns.decorator.AddonDecorator">
+      <point x="0.0" y="-14.5" />
+      <point x="76.5" y="133.0" />
+      <point x="200.8333333333334" y="133.0" />
+      <point x="-48.66666666666666" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.decorator.RibbonDecorator" target="interview.patterns.decorator.AddonDecorator">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="415.5" y="103.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
