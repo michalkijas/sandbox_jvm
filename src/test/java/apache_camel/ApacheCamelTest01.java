@@ -3,6 +3,7 @@ package apache_camel;
 import org.apache.camel.Component;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -11,7 +12,8 @@ import org.junit.jupiter.api.Test;
  */
 class ApacheCamelTest01 {
 
-    @Test
+    @Ignore("Require correct login, password and domain")
+//    @Test
     void test01() throws Exception {
 
         var context = new DefaultCamelContext();
