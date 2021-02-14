@@ -12,6 +12,7 @@ class DuckTest extends Specification {
             sut.quack() == "Can't quack :("
     }
 
+
     def "should create cloud duck"() {
         given:
             Duck sut = new Duck(new JetFlyingStrategy(), new NormalQuackStrategy())

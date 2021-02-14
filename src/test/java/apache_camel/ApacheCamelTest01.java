@@ -25,7 +25,7 @@ class ApacheCamelTest01 {
         RouteBuilder routeBuilder = new RouteBuilder() {
             @Override
             public void configure() {
-                from("imap://skibi:___xxx___@poczta.o2.pl?unseen=true&delay=60000")
+                from("imap://___login___:___password___@___domain___?unseen=true&delay=60000")
                         .process(exchange -> System.out.println("Email: " + exchange.getIn()));
             }
         };
