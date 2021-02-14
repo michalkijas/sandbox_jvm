@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="232.0">interview.patterns.strategy.JetFlyingStrategy</node>
+    <node x="121.5" y="0.0">interview.patterns.strategy.QuackStrategy</node>
+    <node x="0.0" y="306.0">interview.patterns.strategy.Duck</node>
+    <node x="0.0" y="79.0">interview.patterns.strategy.NormalQuackStrategy</node>
+    <node x="187.0" y="232.0">interview.patterns.strategy.NoFlyingStrategy</node>
+    <node x="201.0" y="79.0">interview.patterns.strategy.SilentQuackStrategy</node>
+    <node x="102.25" y="153.0">interview.patterns.strategy.FlyingStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interview.patterns.strategy.SilentQuackStrategy" target="interview.patterns.strategy.QuackStrategy">
+      <point x="0.0" y="-14.5" />
+      <point x="291.5" y="54.0" />
+      <point x="225.75" y="54.0" />
+      <point x="34.75" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.strategy.NoFlyingStrategy" target="interview.patterns.strategy.FlyingStrategy">
+      <point x="0.0" y="-14.5" />
+      <point x="267.0" y="207.0" />
+      <point x="211.75" y="207.0" />
+      <point x="36.5" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.strategy.NormalQuackStrategy" target="interview.patterns.strategy.QuackStrategy">
+      <point x="0.0" y="-14.5" />
+      <point x="90.5" y="54.0" />
+      <point x="156.25" y="54.0" />
+      <point x="-34.75" y="14.5" />
+    </edge>
+    <edge source="interview.patterns.strategy.JetFlyingStrategy" target="interview.patterns.strategy.FlyingStrategy">
+      <point x="0.0" y="-14.5" />
+      <point x="83.5" y="207.0" />
+      <point x="138.75" y="207.0" />
+      <point x="-36.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="423.0" y="54.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
