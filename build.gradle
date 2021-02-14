@@ -16,14 +16,15 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.codehaus.groovy:groovy-all:3.0.7'
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
-
 
     testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 
+    // Testing
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+    testCompile "org.spockframework:spock-core:2.0-M4-groovy-3.0"
 
     // Apache Camel
 //    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
