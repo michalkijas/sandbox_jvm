@@ -1,8 +1,5 @@
 package interview.patterns.proxy;
 
-/**
- * https://www.youtube.com/watch?v=NwaabHqPHeM
- */
 class LazyBookProcessorProxy implements BookProcessor {
 
     private BookProcessor processor;

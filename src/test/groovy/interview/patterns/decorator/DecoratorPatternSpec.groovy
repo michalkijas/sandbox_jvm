@@ -2,7 +2,10 @@ package interview.patterns.decorator
 
 import spock.lang.Specification
 
-class GraphicPostcardSpec extends Specification {
+/**
+ * https://www.youtube.com/watch?v=GCraGHx6gso
+ */
+class DecoratorPatternSpec extends Specification {
 
     def "should create Birthday postcard"() {
         given:

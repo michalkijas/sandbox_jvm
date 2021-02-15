@@ -1,8 +1,5 @@
 package interview.patterns.strategy;
 
-/**
- * https://www.youtube.com/watch?v=v9ejT8FO-7I
- */
 class Duck {
 
     private final FlyingStrategy flying;

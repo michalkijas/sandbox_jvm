@@ -2,7 +2,10 @@ package interview.patterns.strategy
 
 import spock.lang.Specification
 
-class DuckSpec extends Specification {
+/**
+ * https://www.youtube.com/watch?v=v9ejT8FO-7I
+ */
+class StrategyPatternSpec extends Specification {
 
     def "should create rubber duck"() {
         given:
